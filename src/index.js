@@ -1,9 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
-import {Route, BrowserRouter as Router, Switch} from "React-router-dom";
+import {Route, BrowserRouter as Router, Switch} from "react-router-dom";
 
-class Route extends React.Component {
+import Landing from "./components/Landing";
+import NotFound from "./components/Not-Found";
+
+class Routing extends React.Component {
     render() {
         return (
             <Router>
@@ -18,7 +21,7 @@ class Route extends React.Component {
 
 
 ReactDOM.render(
-  <Route />,
+  <Routing />,
   document.getElementById('root')
 );
 
